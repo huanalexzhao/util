@@ -41,7 +41,7 @@ class Heap:
                     if self.heap[left_child] < self.heap[temp]:
                         self.heap[left_child], self.heap[temp] = self.heap[temps], self.heap[left_child]
                         temp = left_child
-                        break
+                    break
 
                 if self.heap[left_child] <= self.heap[right_child]:
                     child = left_child
